@@ -1,9 +1,8 @@
 function render(user) {
     return{
-        id: user.id,
+        id: user._id,
         nome: user.nome,
         email: user.email,
-        senha: user.senha
     }
 }
 

@@ -1,8 +1,6 @@
 let Post = require ("../models/post.model.js")
 let view_post = require ("../views/post.view")
 
-//  FALTA IMPLEMENTAR A FUNÇÃO DELETE
-
 module.exports.insertPost = function(req,res) {
     let post = req.body
     let promise = Post.create(post)
@@ -32,8 +30,6 @@ module.exports.listPosts = function(req,res) {
     )
 }
 
-//Listagens de posts do ID está dando um resultado incorreto.
-// está pegando outro elemento que não é o objeto.
 module.exports.findPost = function(req,res) {
     let id = req.params.id
     let promise = Post.findById(id).exec()
@@ -44,7 +40,7 @@ module.exports.findPost = function(req,res) {
         }
     ).catch(
         function(error){
-            res.status(404). json(error);
+            res.status(404).json(error);
         }
     )
 }
@@ -54,7 +50,7 @@ module.exports.deletePost = function(req,res) {
     let promise = Post.findByIdAndDelete(id).exec()
 
     promise.then(
-        console.log("Usuário Deletado")
+        console.log("Post Deletado")
     ).catch(
         function(error) {
             res.status(500).json(error);

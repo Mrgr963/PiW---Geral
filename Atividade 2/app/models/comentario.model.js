@@ -1,27 +1,21 @@
 let mongoose = require("mongoose")
 
-module.exports = function(){
+module.exports = function() {
     let schema = mongoose.Schema({
-        // Provavelmente a inserção do ID é pra ser String
-        id: {
-            type: Number,
-            required: true
-        },
-        
         texto: {
             type: String,
             required: true
         },
-        
+
         id_post: {
-            type: Number,
-            required:true
+            type: String,
+            required: true
         },
 
         id_usuario: {
-            type: Number,
+            type: String,
             required:true
         }
     })
-    return mongoose.model('Comentario', schema);
-}
+    return mongoose.model('Comment', schema);
+}()

@@ -1,6 +1,7 @@
 let express = require("express")
 let routesUsers = require("../app/routes/users.routes.js")
 let routesPosts = require("../app/routes/posts.routes.js")
+let routesComments = require("../app/routes/comentarios.routes.js")
 
 function setup(){
     let app = express();
@@ -10,6 +11,7 @@ function setup(){
     app.use(express.urlencoded({ extended: false }));
     routesUsers(app)
     routesPosts(app)
+    routesComments(app)
     
     return app;
 }

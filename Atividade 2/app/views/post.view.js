@@ -1,6 +1,6 @@
 function render (post) {
     return{
-        id: post.id,
+        id: post._id,
         texto: post.texto,
         likes: post.likes,
         id_usuario: post.id_usuario

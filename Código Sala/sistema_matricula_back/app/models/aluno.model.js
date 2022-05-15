@@ -13,6 +13,10 @@ module.exports = function(){
         ira:{
             type: Number,
             required: true
+        },
+        senha:{
+            type: String,
+            required: true
         }
     })
     return mongoose.model('Aluno', schema);

@@ -1,3 +1,4 @@
+let bcrypt = require('bcrypt');
 let Aluno = require('../models/aluno.model.js');
 let view_aluno = require("../views/alunos.view");
 
@@ -31,16 +32,19 @@ module.exports.obter_aluno = function(req, res){
     )  
 }
 
+// POST /alunos
 module.exports.inserir_aluno = function(req, res){
     // req.body é um objeto json
-    // req.body.id -> id
-    // req.body.nome -> nome
-    // req.body -> aluno
-    let aluno = req.body;
+    let aluno = new Aluno({
+        nome: req.body.nome,
+        ira: req.body.ira,
+        matricula: req.body.matricula,
+        senha: bcrypt.hashSync(req.body.senha, 10)
+    })
     let promise = Aluno.create(aluno);
     promise.then(
         function(aluno){
-            res.status(201).json(aluno);
+            res.status(201).json(view_aluno.render(aluno));
         }
     ).catch(
         function(error){
