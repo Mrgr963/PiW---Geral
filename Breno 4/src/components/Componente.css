@@ -1,0 +1,95 @@
+
+
+
+
+
+.fundochat{
+    height: 100vh;
+    width: 700px;
+    
+    
+    
+}
+
+.mensagens2{
+  width: 100%;
+  height: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.chat{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    overflow-y: scroll;
+
+}
+
+.chat::-webkit-scrollbar{
+    width: 12px;
+    border: 1px solid rgb(200,200,200);
+}
+
+.chat::-webkit-scrollbar-thumb{
+    background-color: rgba(146, 142, 142, 0.212);
+    border-radius: 6px;
+}
+
+.mensagem-real{
+    width: 100%;
+    height: 200px;
+    margin: 30px;
+    display: inline;
+    border-radius: 10px solid rgb(114, 114, 114);
+
+    
+}
+
+.nomeusuario p{
+    height: 20px;
+    display: flex;
+    color: black;
+    
+
+   
+}
+
+.mensagemusuario{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(114, 114, 114);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dadosusuario{
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+    
+  
+}
+
+.like{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 60%;
+}
+
+.botaolike{
+    margin: 1px;
+}
+
+.galeria-tweets{
+    width: 100%;
+}
