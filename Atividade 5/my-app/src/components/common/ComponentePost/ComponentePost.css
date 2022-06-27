@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: VT323;
+}
+
+.geralBg{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 100%;
+}
+
+.timelineBg{
+    display: flex;
+    background-color: black;
+    height: 100%;
+    width: 700px;
+    justify-content: center;
+}
+
+
+.msg{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.msgCard{
+    display: flex;
+    height: auto;
+    width: 500px;
+    margin: 20px;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.imgHeader{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.userName{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.userCardName{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+.userMsg{
+    margin-top: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.userData{
+    margin-left: auto;
+    padding-right: 20px;
+    font-size: 18px;
+    margin-left: 10px;
+    color: yellow;
+}
+
+.like{
+    background-color: black;
+    border-color: yellow;
+    color: yellow;
+    padding: 5px;
+}
